@@ -1,13 +1,27 @@
 const connectToMongo = require('./db');
 const express = require('express')
+//const User = require('./models/User')
 
 connectToMongo();
 const app = express()
 const port = 3000
 app.use(express.json())
+/*
 app.get('/', (req, res) => {
   res.send('Hello Jhansi!')
 })
+
+app.post('/createUser', (req, res)=>{
+  console.log(req.body) ;
+  const user = User(req.body);
+  user.save()
+  res.send(req.body);
+})
+*/
+
+
+
+
 
 
 // Available Routes
