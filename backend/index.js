@@ -9,6 +9,7 @@ app.use(express.json())
 /*
 app.get('/', (req, res) => {
   res.send('Hello Jhansi!')
+  
 })
 
 app.post('/createUser', (req, res)=>{
