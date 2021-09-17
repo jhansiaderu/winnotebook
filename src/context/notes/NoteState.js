@@ -7,6 +7,7 @@ const NoteState = (props)=>{
        {
         name:  "jha",
         email:"jha343@gmail.com",
+        _id:"12365387367221",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",
         description:"please make it fast",
@@ -15,6 +16,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
+        _id:"12365387367224",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",
@@ -24,6 +26,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
+        _id:"12365387367223",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",
@@ -33,6 +36,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
+        _id:"12365387367229",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",
@@ -42,6 +46,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
+        _id:"12365387367225",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",
@@ -51,6 +56,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
+        _id:"12365387367220",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"my title",

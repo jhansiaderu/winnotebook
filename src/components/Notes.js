@@ -12,7 +12,7 @@ import Noteitem from './Noteitem';
          <h2>your notes</h2>
          {notes.map((note)=>{
             //return note.title;
-            return <Noteitem note={note}/>
+            return <Noteitem  key={note._id} note={note}/>
         })}
          </div>
             
