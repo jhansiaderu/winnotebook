@@ -56,7 +56,7 @@ const NoteState = (props)=>{
        },
        {
         name:  "jha",
-        _id:"12365387367225",
+        _id:"123653873672275",
         email:"jha343@gmail.com",
         password:"$2a$10$XZdFjgBMT8aEl5u1d0lG2uE0AQi9p21uoKt0ToZpOSqxLgW/zFB/i",
         title:"title",
@@ -87,14 +87,20 @@ const NoteState = (props)=>{
 
    //delete a note
 
-   const deleteNote =() =>{
+   const deleteNote =(id) =>{
+   
+        // TODO: API Call
+        console.log("Deleting the note with id" + id);
+        const newNotes = notes.filter((note)=>{return note._id!==id})
+        setNotes(newNotes)
+      
        
    }
 
 
    //edit a note
 
-   const editNote =() =>{
+   const editNote =(id,title,description,tag) =>{
        
    }
     return (
