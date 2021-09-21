@@ -98,6 +98,9 @@ const NoteState = (props)=>{
         },
         body: JSON.stringify({title, description, tag})
     });
+    const json = await response.json();
+    console.log(json)
+     
     console.log("Adding a new note")
     const note = {
       "_id": "61322f119553781a8ca8d0e08",
@@ -113,7 +116,7 @@ const NoteState = (props)=>{
 
    //delete a note
 
-   const deleteNote =(id) =>{
+   /*const deleteNote =(id) =>{
    
         // TODO: API Call
         console.log("Deleting the note with id" + id);
@@ -121,7 +124,7 @@ const NoteState = (props)=>{
         setNotes(newNotes)
       
        
-   }
+   }*/
 
 
    //edit a note
@@ -137,17 +140,23 @@ const NoteState = (props)=>{
       body: JSON.stringify({title, description, tag})
     });
     const json = response.json();
+    console.log(json)
+
+    let newNotes = JSON.parse(JSON.stringify(notes))
 
     // Logic to edit in client
-    for (let index = 0; index < notes.length; index++) {
-      const element = notes[index];
+    for (let index = 0; index < newNotes.length; index++) {
+      const element = newNotes[index];
       if (element._id === id) {
-        element.title = title;
-        element.description = description;
-        element.tag = tag;
+        newNotes.title = title;
+        newNotes.description = description;
+        newNotes.tag = tag;
+        break;
       }
 
     }
+    setNotes(newNotes);
+  }
     //delete a note
     const deleteNote = async (id) => {
         // API Call
@@ -168,12 +177,12 @@ const NoteState = (props)=>{
   
 
        
-   }
+   
     return (
         <NoteContext.Provider value={{notes , addNote ,deleteNote, editNote,getNotes}}>
             {props.children}
         </NoteContext.Provider>
     )
-}
+  }
 
 export default NoteState;
