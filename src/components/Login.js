@@ -18,15 +18,19 @@ const Login = (props) => {
         });
         const json = await response.json()
         console.log(json);
+        
         if (json.success){
            
             localStorage.setItem('token', json.authtoken); 
             history.push("/");
+            props.showAlert("logged in Successfully ", "success")
 
         }
         else{
-            alert("Invalid credentials");
+            props.showAlert("Invalid details", "danger")
         }
+    
+    
         
     }
 
